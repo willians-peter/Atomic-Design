@@ -1,0 +1,90 @@
+
+[M01S10] Exercício 1: Loja de plantas - Estrutura do projeto
+Descrição
+🎯 Objetivo: Criar a estrutura inicial do projeto seguindo Atomic Design.
+Requisitos:
+Criar um projeto React usando Vite.
+Dentro da pasta src, criar a seguinte estrutura de pastas:
+src/
+  components/
+    atoms/
+    molecules/
+    organisms/
+    templates/
+  pages/
+Cada pasta deve conter seus próprios componentes conforme a metodologia.
+💡 Dica: Mantenha os nomes dos arquivos e componentes seguindo o padrão PascalCase.
+
+[M01S10] Exercício 2: Loja de plantas - Átomos
+Descrição
+🎯 Objetivo: Criar três componentes atômicos reutilizáveis.
+Requisitos:
+Button
+Props: variant: "primary" | "secondary";
+Estilização diferenciada para cada variante.
+PriceTag
+Props: value: number;
+Exibir o valor em formato monetário brasileiro (ex: R$ 12,30).
+PlantIcon
+Props: size: "sm" | "md" | "lg";;
+Utilizar o ícone @mui/icons-material/LocalFlorist.
+💡 Dica: Utilize CSS Modules para isolar os estilos.
+
+[M01S10] Exercício 3: Loja de plantas - Molécula
+Descrição
+🎯 Objetivo: Criar um card de produto usando os átomos criados anteriormente.
+Requisitos:
+Criar o componente PlantCard utilizando:
+Button;
+PriceTag;
+PlantIcon.
+Outros elementos se necessário (ex: título, imagem).
+Props:
+Plant: {
+  id: string;
+  name: string;
+  price: number;
+  light: "sun" | "shade";
+}
+Usar CSS Modules para a estilização.
+💡 Dica: Mostre ícones ou cores diferentes para light = "sun" e light = "shade".
+
+[M01S10] Exercício 4: Loja de plantas - Organismos Responsivo
+Descrição
+🎯 Objetivo: Criar um grid de produtos responsivo.
+Requisitos:
+Criar o componente PlantGrid que exibe vários PlantCard.
+Utilizar useMediaQuery (Material UI) para definir o número de colunas:
+Mobile: 1 coluna;
+Tablet: 2 colunas;
+Desktop: 3 colunas.
+💡 Dica: Utilize Grid do Material UI para simplificar a responsividade.
+
+[M01S10] Exercício 5: Loja de plantas - Tema
+Descrição
+🎯 Objetivo: Implementar troca de tema com Material UI.
+Requisitos:
+Criar dois temas usando o sistema de temas do Material UI:
+Claro: base em marrom (#c2a39a, #e1d1c8);
+Escuro: base em verde (#001600, #0a3007);
+Adicionar um botão para alternar entre os temas.
+Aplicar o tema no ThemeProvider e estilizar Paper em áreas estratégicas.
+💡 Dica: Armazene a preferência de tema no estado com useState e aplique de forma global.
+
+[M01S10] Exercício 6: Loja de plantas - Template e Page
+Descrição
+🎯 Objetivo: Criar um layout padrão e uma página que utiliza esse layout.
+Requisitos:
+Template: StoreLayout
+Header com logo;
+Área de conteúdo;
+Footer.
+Página: PlantStore
+Utiliza o StoreLayout;
+Exibe PlantGrid com pelo menos 6 produtos mockados:
+const mockPlants = [
+  { id: "1", name: "Suculenta", price: 29.9, light: "sun" },
+  { id: "2", name: "Samambaia", price: 39.9, light: "shade" },
+  // Adicione mais 4 itens...
+];
+💡 Dica: Armazene os mocks em um arquivo separado (mockPlants.js) para facilitar manutenção.
