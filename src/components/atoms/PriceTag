@@ -1,0 +1,3 @@
+PriceTag
+Props: value: number;
+Exibir o valor em formato monetário brasileiro (ex: R$ 12,30).
