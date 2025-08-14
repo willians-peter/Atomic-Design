@@ -2,7 +2,6 @@ export default function Button({
   text,
   onClick = () => {},
   variant = "primary",
-  size = "md",
   className = "",
 }) {
   const variantStyles = {

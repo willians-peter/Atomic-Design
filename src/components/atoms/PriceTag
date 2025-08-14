@@ -1,3 +1,12 @@
-PriceTag
-Props: value: number;
-Exibir o valor em formato monetário brasileiro (ex: R$ 12,30).
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const PriceTag = ({ value }) => {
+  return `R$ ${value.toFixed(2).replace('.', ',')}`;
+};
+
+PriceTag.propTypes = {
+  value: PropTypes.number.isRequired,
+};
+
+export default PriceTag;
