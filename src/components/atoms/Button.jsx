@@ -1,21 +1,12 @@
-export default function Button({
-  text,
-  onClick = () => {},
-  variant = "primary",
-  className = "",
-}) {
-  const variantStyles = {
-    primary: { backgroundColor: "blue" },
-    secondary: { backgroundColor: "green" },
-  };
+import styles from './Button.module.css';
 
+export default function Button({ children, onClick = () => {}, variant = "primary", className = "", }) {
   return (
     <button
-      className={`btn ${className}`}
-      style={{ ...variantStyles[variant] }}
+      className={`${styles.btn} ${styles[variant]} ${className}`}
       onClick={onClick}
     >
-      {text}
+      {children}
     </button>
   );
 }
