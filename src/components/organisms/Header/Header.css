@@ -36,3 +36,15 @@
 
   font-style: italic;
 }
+.nav-links {
+  display: flex;
+  gap: 10px;
+  margin-left: auto; /* Isso fará com que os links de navegação fiquem à direita */
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+
+}
+.nav-links a {
+  color: #fff; /* Cor branca */
+}

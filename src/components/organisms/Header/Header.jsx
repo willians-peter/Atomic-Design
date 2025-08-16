@@ -18,6 +18,9 @@ function Header() {
           }}
         />
         <h1>Plant Store</h1>
+        <div className="nav-links">
+        <a href="#Footer">Contato</a>
+        </div>
    
       </div>
     </header>

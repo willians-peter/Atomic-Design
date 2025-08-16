@@ -5,7 +5,7 @@ import whatsLogo from "../../assets/whats_logo.png";
 
 function Footer() {
   return (
-    <footer className="Footer">
+    <footer id="Footer" className="Footer">
       <div>
         <div className="RichText">
           <div id="Icones">
@@ -31,7 +31,7 @@ function Footer() {
             <img src={whatsLogo} alt="Logotipo do Whatsapp" />
           </a>
           
-          <a href="mailto:contato@taskmanager.com.br">Enviar Email</a>
+          <a href="mailto:contato@plantstore.com.br">Enviar Email</a>
         </div>
       </div>
     </footer>
