@@ -22,7 +22,7 @@ function Footer() {
               <img src={faceLogo} alt="Logotipo do Facebock" />
             </a>
           </div>
-          <h2>PLant Store</h2>
+          <h2>Plant Store</h2>
           <p>
            Plantando o amanhã!
           </p>

@@ -3,9 +3,9 @@ import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 
 const PlantIcon = ({ size = "md", className = "" }) => {
   const sizeStyles = {
-    sm: { fontSize: "2px" },
-    md: { fontSize: "4px" },
-    lg: { fontSize: "8px" },
+    sm: { fontSize: "16px" },
+    md: { fontSize: "32px" },
+    lg: { fontSize: "64px" },
   };
 
   return (

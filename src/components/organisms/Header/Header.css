@@ -1,8 +1,8 @@
 .Header {
   display: flex;
-  justify-content: center;
+
   background-color: #4d4a4b;
-  width: 100% ;
+  width: 100%;
 }
 
 .Header > div {
@@ -12,8 +12,8 @@
   color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+
+  align-items: left;
   gap: 8px;
 }
 
@@ -27,11 +27,12 @@
   font-weight: normal;
   font-style: italic;
   font-size: 20px;
+  text-align: left;
 }
 
 .Header nav {
   flex-grow: 1;
   display: flex;
-  justify-content: right;
+
   font-style: italic;
 }
